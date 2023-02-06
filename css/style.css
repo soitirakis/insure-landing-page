@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+:root {
+  --color1: hsl(256, 26%, 20%);
+  --color2: hsl(216,30%,68%);
+  --color3: hsl(270, 9%, 17%);
+  --color4: hsl(273, 4%,51%);
+  --color5: hsl(0,0%,98%);
+}
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
