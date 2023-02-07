@@ -5,6 +5,7 @@
   --color3: hsl(270, 9%, 17%);
   --color4: hsl(273, 4%,51%);
   --color5: hsl(0,0%,98%);
+  --color6: blue;
 }
 * {
   box-sizing: border-box;
@@ -18,4 +19,33 @@ body {
 }
 .heading {
   font-family: 'DM Serif Display';
+}
+
+/*footer*/
+.footer-logo-image {
+  display: block;
+  margin: auto;
+}
+.sitemap {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.sitemap:last-child {
+  padding-bottom: 2.5rem;
+}
+ul {
+  list-style-type: none;
+  border: none;
+}
+li.sitemap-header.sitemap-list-item {
+  padding: 2rem 0;
+  color: var(--color4);
+}
+li.sitemap-list-item {
+  text-transform: uppercase;
+  color: var(--color3);
+  font-weight: 700;
+  padding-top: 1rem;
+  text-align: center;
 }
