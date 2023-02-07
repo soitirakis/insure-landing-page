@@ -17,14 +17,40 @@ html, body {
 body {
   font-family: 'Karla';
 }
+menu {
+  padding: 0;
+}
 .heading {
   font-family: 'DM Serif Display';
 }
 
 /*footer*/
+.footer-header {
+  background-image: url('../img/bg-pattern-footer-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+/*  background-size: contain;*/
+  display: flex;
+  flex-direction: column;
+}
+.footer-header::after {
+  content: "";
+  border-bottom: 1px solid var(--color4);
+}
+.footer-logo {
+  padding: 3.5rem 0 2rem;
+}
 .footer-logo-image {
   display: block;
   margin: auto;
+}
+.footer-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  align-items: baseline;
+  padding-bottom: 2rem;
 }
 .sitemap {
   display: flex;
@@ -37,6 +63,7 @@ body {
 ul {
   list-style-type: none;
   border: none;
+  padding: 0;
 }
 li.sitemap-header.sitemap-list-item {
   padding: 2rem 0;
