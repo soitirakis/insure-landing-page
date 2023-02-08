@@ -5,7 +5,6 @@
   --color3: hsl(270, 9%, 17%);
   --color4: hsl(273, 4%,51%);
   --color5: hsl(0,0%,98%);
-  --color6: blue;
 }
 * {
   box-sizing: border-box;
@@ -23,20 +22,72 @@ menu {
 .heading {
   font-family: 'DM Serif Display';
 }
+.card {
+  padding: 2rem;
+}
+.card-image {
+  display: block;
+  margin: auto;
+}
+.card-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  text-align: center;
+}
+/*aside how we work*/
+.how-we-work-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5rem 2rem;
+  margin: 7.5rem 2rem;
+  background-image: url('../img/bg-pattern-how-we-work-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.how-we-work-title {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+.how-we-work-button {
+  border: 2px solid var(--color5);
+  outline: none;
+  margin: 0;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.how-we-work-button:hover {
+  cursor: pointer;
+  background-color: var(--color5);
+  color: var(--color1);
+}
+.how-we-work-title, .how-we-work-button {
+  color: var(--color5);
+  letter-spacing: 2px;
+}
+.how-we-work-card, .how-we-work-button {
+  background-color: var(--color1);
+}
 
 /*footer*/
+.footer {
+  background-color: var(--color5);
+}
 .footer-header {
   background-image: url('../img/bg-pattern-footer-mobile.svg');
   background-repeat: no-repeat;
   background-position: center;
-/*  background-size: contain;*/
   display: flex;
   flex-direction: column;
 }
-.footer-header::after {
+/*.footer-header::after {
   content: "";
   border-bottom: 1px solid var(--color4);
-}
+}*/
 .footer-logo {
   padding: 3.5rem 0 2rem;
 }
@@ -75,4 +126,48 @@ li.sitemap-list-item {
   font-weight: 700;
   padding-top: 1rem;
   text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .page-dimensions {
+    width: 80%;
+    margin: auto;
+  }
+  menu, footer {
+    padding: 0 2.5rem;
+  }
+
+  .how-we-work-card {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 2rem 3.5rem;
+    margin: 7.5rem 0;
+    background-image: url('../img/bg-pattern-how-we-work-desktop.svg');
+  }
+  .how-we-work-title {
+    font-size: 2.5rem;
+    width: 40%;
+  }
+
+  .footer {
+    background-image: url('../img/bg-pattern-footer-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+  }
+  .footer-header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3.5rem;
+    background-image: none;
+  }
+  .footer-logo {
+    padding: 0;
+  }
+  .sitemap {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 80%;
+  }
 }
