@@ -45,17 +45,18 @@ body {
   background-position: bottom;
   margin-top: 6rem;
 }
+/* span close 
 .close {
   position: absolute;
   top: 20px;
   right: 30px;
   font-size: 25px;
-  color: red;
+  color: red
 }
 .close:hover{
   cursor: pointer;
   color: red;
-}
+}*/
 .nav {
   padding-top: 2rem;
 }
