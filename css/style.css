@@ -50,6 +50,7 @@ body {
   top: 20px;
   right: 30px;
   font-size: 25px;
+  color: red;
 }
 .close:hover{
   cursor: pointer;
