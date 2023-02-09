@@ -43,6 +43,7 @@ body {
   background-image: url('../img/bg-pattern-mobile-nav.svg');
   background-repeat: no-repeat;
   background-position: bottom;
+  margin-top: 6rem;
 }
 .close {
   position: absolute;
