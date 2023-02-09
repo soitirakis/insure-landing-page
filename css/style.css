@@ -26,11 +26,62 @@ body {
 .header-image-logo, .header-hamburger {
   display: block;
 }
+.nav {
+  display: none;
+  overflow: auto;
+}
+.nav-ul {
+  list-style: none;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+.nav-list {
+  padding: .75rem 0;
+}
+.nav-item {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  /*color: var(--color5);*/
+}
+.nav-list:last-child {
+  border: 2px solid var(--color5);
+  margin: 0 3rem;
+}
+.image-intro {
+  display: block;
+  max-width: 550px;
+  width: 100%;
+}
 menu {
+  margin-top: 0;
   padding: 0;
 }
 .heading {
   font-family: 'DM Serif Display';
+}
+.intro-card {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: var(--color1);
+  background-image: url('../img/bg-pattern-intro-left-mobile.svg'), url("../img/bg-pattern-intro-right-mobile.svg");
+  background-position: top left, right bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+.intro-heading {
+  color: var(--color5);
+  letter-spacing: 2px;
+}
+.intro-card-description {
+  text-align: center;
+  color: var(--color5);
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+.how-we-work-button.intro-button {
+  margin: auto;
 }
 .card {
   padding: 2rem;
@@ -57,7 +108,7 @@ menu {
   background-repeat: no-repeat;
   background-position: top right;
 }
-.how-we-work-title {
+.how-we-work-title, .intro-heading {
   font-size: 2rem;
   font-weight: 400;
   text-align: center;
@@ -75,7 +126,7 @@ menu {
   background-color: var(--color5);
   color: var(--color1);
 }
-.how-we-work-title, .how-we-work-button {
+.how-we-work-title, .how-we-work-button, .intro-heading {
   color: var(--color5);
   letter-spacing: 2px;
 }
