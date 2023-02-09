@@ -16,6 +16,16 @@ html, body {
 body {
   font-family: 'Karla';
 }
+/*header*/
+.header-image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.header-image-logo, .header-hamburger {
+  display: block;
+}
 menu {
   padding: 0;
 }
