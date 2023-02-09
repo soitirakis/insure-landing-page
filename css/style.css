@@ -26,9 +26,36 @@ body {
 .header-image-logo, .header-hamburger {
   display: block;
 }
-.nav {
-  display: none;
+.header-hamburger:hover {
+  cursor: pointer;
+}
+.modal {
   overflow: auto;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  background-color: var(--color3);
+  background-image: url('../img/bg-pattern-mobile-nav.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 25px;
+}
+.close:hover{
+  cursor: pointer;
+  color: red;
+}
+.nav {
+  padding-top: 2rem;
 }
 .nav-ul {
   list-style: none;
@@ -43,7 +70,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
-  /*color: var(--color5);*/
+  color: var(--color5);
+  transition: 0.3s;
 }
 .nav-list:last-child {
   border: 2px solid var(--color5);
@@ -83,6 +111,14 @@ menu {
 .how-we-work-button.intro-button {
   margin: auto;
 }
+.page-title {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color3);
+  letter-spacing: 2px;
+}
 .card {
   padding: 2rem;
 }
@@ -95,6 +131,18 @@ menu {
   flex-flow: column nowrap;
   align-items: center;
   text-align: center;
+}
+.card-title {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  padding-top: 1rem;
+}
+.card-description {
+  color: var(--color4);
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  font-weight: 400;
 }
 /*aside how we work*/
 .how-we-work-card {

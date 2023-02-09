@@ -12,16 +12,21 @@
     <header>
       <div class="header-image">
         <img class="header-image-logo" src="img/logo.svg" alt="Insure logo image">
-        <img class="header-hamburger" src="img/icon-hamburger.svg" alt="Hmaburger logo to extend the navbar">
+        <img class="header-hamburger" id="nav-menu" src="img/icon-hamburger.svg" alt="Hmaburger logo to extend the navbar">
       </div>
-      <nav class="nav">
-        <ul class="nav-ul">
-          <li class="nav-list"><a class="nav-item" href="#">how we work</a></li>
-          <li class="nav-list"><a class="nav-item" href="#">blog</a></li>
-          <li class="nav-list"><a class="nav-item" href="#">account</a></li>
-          <li class="nav-list"><a class="nav-item" href="#">view plans</a></li>
-        </ul>
-      </nav>
+      <div class="modal" id="myModal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <nav class="nav">
+            <ul class="nav-ul">
+              <li class="nav-list"><a class="nav-item" href="#">how we work</a></li>
+              <li class="nav-list"><a class="nav-item" href="#">blog</a></li>
+              <li class="nav-list"><a class="nav-item" href="#">account</a></li>
+              <li class="nav-list"><a class="nav-item" href="#">view plans</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <picture>
         <source media="(min-width: 600px)" srcset="img/image-intro-desktop.jpg" >
         <img class="image-intro" src="img/image-intro-mobile.jpg" alt="Happy insured family">
@@ -37,7 +42,7 @@
           <button class="how-we-work-button intro-button" type="button" name="button">view plans</button>
         </div>
       </section>
-      <h2 class="heading">We're different</h2>
+      <h2 class="page-title heading">We're different</h2>
       <section class="card">
         <img class="card-image" src="img/icon-snappy-process.svg" alt="Lighting image representing the fast process">
         <div class="card-container">
