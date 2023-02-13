@@ -359,4 +359,11 @@ body {
     gap: 2rem;
     width: 80%;
   }
+  hr {
+    width: 80%;
+    /*border: none;*/
+    height: 1px;
+    color: var(--color5);
+    background-color: var(--color5);
+  }
 }
