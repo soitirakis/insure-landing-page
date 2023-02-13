@@ -307,6 +307,25 @@ body {
     width: 100vw;
     max-width: 100%;
   }
+  .container {
+    margin-top: 10rem;
+  }
+  .page-title {
+    text-align: left;
+    padding: 2rem 1rem;
+    font-size: 3rem;
+  }
+  .content {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .card-image {
+    margin: 0;
+  }
+  .card-container {
+    align-items: first baseline;
+    text-align: left;
+  }
   .how-we-work-card {
     flex-flow: row nowrap;
     justify-content: space-between;
