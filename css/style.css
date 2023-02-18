@@ -292,6 +292,7 @@ body {
     position: absolute;
     top: 18%;
     right: 18%;
+    max-width: 450px;
   }
 
   menu, footer {
@@ -309,6 +310,19 @@ body {
   }
   .container {
     margin-top: 10rem;
+  }
+  .intro-heading.heading{
+    text-align: left;
+    font-size: 3rem;
+    width: 45%;
+  }
+  .intro-card-description{
+    width: 45%;
+    text-align: left;
+    font-size: 1.1rem;
+  }
+  .how-we-work-button.intro-button {
+    margin-left: 0px;
   }
   .page-title {
     text-align: left;
